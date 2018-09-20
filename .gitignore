@@ -1,0 +1,6 @@
+# IDE
+.idea
+
+#Other
+node_modules
+*.png
