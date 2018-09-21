@@ -1,6 +1,7 @@
 
 class Minsida {
   get loginWithUsernamePassword() { return $('.vision-list-group > a:nth-child(3)') };
+  get loginWithUsernamePassword() { return $('.autotest .userpassword') };
   get loginInfoPersonalNumber() { return $('.fieldset #pn') };
   get loginInfoPassword() { return $('.fieldset #password') };
   get loginButton() { return $('.panel-vision-body button') };
@@ -22,7 +23,6 @@ class Minsida {
       browser.elementIdValue(activeElement, input);
     }
   }
-
 }
 
 module.exports = new Minsida;

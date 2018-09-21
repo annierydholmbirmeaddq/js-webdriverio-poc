@@ -23,6 +23,7 @@ describe('Tests login functionality on vision.se', function () {
     Minsida.loginInfoPassword.click();
     Minsida.enterPassword('correctpassword');
     Minsida.loginButton.click();
+    browser.click('.vision-visit > div.tjollahopp > a');
     Minsida.landingPage.waitForExist(30000);
   });
 });
