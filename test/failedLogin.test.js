@@ -17,7 +17,7 @@ describe('Tests login functionality on vision.se', function () {
     Minsida.loginInfoPersonalNumber.waitForExist(30000);
   });
 
-  it('should succesfully login with correct user-information', function () {
+  it('should fail to login because of incorrect user-information', function () {
     Minsida.loginInfoPersonalNumber.click();
     Minsida.enterUsername('1234567890');
     Minsida.loginInfoPassword.click();

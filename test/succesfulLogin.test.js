@@ -17,13 +17,12 @@ describe('Tests login functionality on vision.se', function () {
     Minsida.loginInfoPersonalNumber.waitForExist(30000);
   });
 
-  it.skip('should failed login because of incorrect user-information', function () {
+  it.skip('should succeed to login because of correct user-information', function () {
     Minsida.loginInfoPersonalNumber.click();
     Minsida.enterUsername('correctusername');
     Minsida.loginInfoPassword.click();
     Minsida.enterPassword('correctpassword');
     Minsida.loginButton.click();
-    browser.click('.vision-visit > div.tjollahopp > a');
     Minsida.landingPage.waitForExist(30000);
   });
 });
